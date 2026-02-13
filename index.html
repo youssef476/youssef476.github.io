@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-    <title>Youssef Roshdy · data analyst (purple dark·mode)</title>
-    <!-- Font & Icons -->
+    <title>Youssef Roshdy · data analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
         }
 
         body {
-            background: #0b0710;  /* deep dark base */
+            background: #0b0710;
             font-family: 'Inter', sans-serif;
             color: #e1d9f2;
             line-height: 1.5;
@@ -31,12 +30,6 @@
         .wrapper {
             max-width: 1300px;
             width: 100%;
-        }
-
-        /* purple premium palette */
-        h1, h2, h3 {
-            font-weight: 600;
-            letter-spacing: -0.02em;
         }
 
         h1 {
@@ -72,7 +65,6 @@
             margin-bottom: 0.4rem;
         }
 
-        /* transparent glass cards with deep purple undertone */
         .card {
             background: rgba(18, 12, 30, 0.55);
             backdrop-filter: blur(14px) saturate(180%);
@@ -90,7 +82,6 @@
             box-shadow: 0 28px 44px -12px #3a1d5e;
         }
 
-        /* profile header */
         .profile-row {
             display: flex;
             flex-wrap: wrap;
@@ -107,7 +98,6 @@
             flex-wrap: wrap;
         }
 
-        /* actual photo styling - replace src with your image */
         .profile-photo {
             width: 100px;
             height: 100px;
@@ -115,7 +105,7 @@
             object-fit: cover;
             border: 3px solid #ad7eff;
             box-shadow: 0 14px 28px -8px #000000b3, 0 0 20px #7526ff40;
-            background: #2a1e3f; /* fallback color */
+            background: #2a1e3f;
         }
 
         .contact-info {
@@ -158,7 +148,6 @@
             margin-left: 0.8rem;
         }
 
-        /* main grid – longer layout */
         .main-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -173,7 +162,6 @@
             margin-bottom: 2.5rem;
         }
 
-        /* certificates list with sparkle */
         .cert-list {
             list-style: none;
             margin-top: 1rem;
@@ -224,7 +212,6 @@
             letter-spacing: 0.8px;
         }
 
-        /* project cards longer */
         .project-item {
             background: rgba(18, 10, 32, 0.7);
             backdrop-filter: blur(6px);
@@ -300,9 +287,15 @@
             border: 1px solid #ad60ff;
         }
 
-        /* mobile first small touches */
+        .extra-lengthen {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
         @media (max-width: 900px) {
-            .main-grid, .wide-grid {
+            .main-grid, .wide-grid, .extra-lengthen {
                 grid-template-columns: 1fr;
             }
             .profile-row {
@@ -329,42 +322,19 @@
                 margin-left: 0;
             }
         }
-
-        /* extra purple touches */
-        .glow-text {
-            color: #e3c9ff;
-            text-shadow: 0 0 6px #9f5eff;
-        }
-
-        i.fa-solid, i.fa-regular {
-            filter: drop-shadow(0 0 5px #b05eff);
-        }
-        /* longer sections: extra block for lengthening */
-        .extra-lengthen {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin: 2.5rem 0;
-        }
-        @media (max-width:700px){
-            .extra-lengthen{
-                grid-template-columns:1fr;
-            }
-        }
     </style>
 </head>
 <body>
 <div class="wrapper">
-    <!-- header with actual photo – replace src with your image file -->
+    <!-- header with photo -->
     <div class="card profile-row" style="padding: 1.2rem 2rem;">
         <div class="profile-left">
-            <!-- YOUR PHOTO GOES HERE: replace the URL below with your photo path/url -->
             <img src="https://placekitten.com/200/200" alt="Youssef Roshdy" class="profile-photo" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%223a2a5e%22%2F%3E%3Ctext%20x%3D%2218%22%20y%3D%2268%22%20font-size%3D%2250%22%20fill%3D%22%23b38eff%22%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E';">
             <div>
                 <h1>Youssef Mohamed Roshdy</h1>
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-top: 0.4rem;">
                     <span style="font-size: 1.4rem; font-weight: 400; background: #281e3e; padding: 0.2rem 1.3rem; border-radius: 40px; border: 1px solid #b266ff;">Data Analyst</span>
-                    <span class="fun-badge"><i class="fas fa-moon"></i> purple mode · junior insight</span>
+                    <span class="fun-badge"><i class="fas fa-moon"></i> junior · Egypt</span>
                 </div>
             </div>
         </div>
@@ -375,17 +345,16 @@
         </div>
     </div>
 
-    <!-- objective with spark (same data) -->
+    <!-- objective -->
     <div class="card" style="margin: 1.8rem 0; padding: 1.6rem 2.2rem;">
         <i class="fas fa-bullseye" style="color: #c38eff; font-size: 2rem; float: right; opacity: 0.6;"></i>
         <p style="font-size: 1.25rem; max-width: 85%; font-weight: 350; color: #e2d3ff;"><span style="font-weight: 700; color: #e5c3ff;">Objective:</span> Junior Data Analyst passionate about data analysis and extracting insights to support data‑driven decision making. Skilled in Excel, SQL, Python, and Power BI, and eager to grow in a professional environment.</p>
     </div>
 
-    <!-- main two columns: Education + certificates / skills + languages (from updated resume) -->
+    <!-- main two columns -->
     <div class="main-grid">
-        <!-- left column: Education & certificates (long list) -->
+        <!-- left column -->
         <div>
-            <!-- Education card -->
             <div class="card" style="margin-bottom: 2rem;">
                 <h2><i class="fas fa-graduation-cap"></i> Education</h2>
                 <div style="display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;">
@@ -397,29 +366,24 @@
                 <p><i class="fas fa-microchip"></i> AI & machine learning projects through university teams – data analysis basics and ML exploration.</p>
             </div>
 
-            <!-- Certificates card (DETAILED from doc) -->
             <div class="card">
-                <h2><i class="fas fa-certificate"></i> Certificates <span style="font-size: 1rem; font-weight: 400; margin-left: 10px;">(ministry & beyond)</span></h2>
+                <h2><i class="fas fa-certificate"></i> Certificates</h2>
                 <ul class="cert-list">
-                    <li><strong>Digital Egypt Pioneers Initiative - DEPI</strong> – Data Analyst Specialist Program: 1. data-driven decision-making fundamentals · 2. data cleaning, preparation, analysis (Python, SQL, Excel) · 3. visualization (Power BI, Tableau, Excel) · 4. Prompt Engineering for effective AI interaction.</li>
+                    <li><strong>DEPI</strong> – Data Analyst Specialist Program: data cleaning, analysis (Python, SQL, Excel), visualization (Power BI, Tableau, Excel), Prompt Engineering.</li>
                     <li><strong>IBM Artificial Intelligence Fundamentals</strong> + capstone project.</li>
-                    <li><strong>AI and machine learning course</strong> – university team projects (basics of data analysis & ML).</li>
-                    <li><strong>Digital Egypt Cubs Initiative - DECI</strong> – Levels 1 & 2 (AI, innovation, digital transformation).</li>
-                    <li><strong>Graphic Design course</strong> – Photoshop, Illustrator, InDesign, integrating AI tools into creative workflows.</li>
+                    <li><strong>AI and machine learning course</strong> – university team projects.</li>
+                    <li><strong>DECI</strong> – Levels 1 & 2 (AI, innovation, digital transformation).</li>
+                    <li><strong>Graphic Design course</strong> – Photoshop, Illustrator, InDesign, integrating AI tools.</li>
                 </ul>
-                <div style="margin-top: 1.5rem; font-size: 0.95rem; background: #1d1235; padding: 0.8rem; border-radius: 24px; border: 1px solid #a566ff;">
-                    <i class="fas fa-robot" style="margin-right: 0.5rem;"></i> “Prompt Engineering fundamentals for effective AI interaction” – DEPI module proudly completed.
-                </div>
             </div>
         </div>
 
-        <!-- right column: Skills & Languages (as per new CV) -->
+        <!-- right column: Skills & Languages -->
         <div>
             <div class="card">
-                <h2><i class="fas fa-sliders-up"></i> arsenal</h2>
-                <!-- Technical Skills (detailed) -->
+                <h2><i class="fas fa-code"></i> المهارات</h2>
                 <div class="skill-group">
-                    <p><i class="fas fa-brackets-curly"></i> Technical Skills</p>
+                    <p>المهارات التقنية</p>
                     <div>
                         <span class="skill-tag">Adobe Creative Suite</span>
                         <span class="skill-tag">Photoshop</span>
@@ -427,24 +391,23 @@
                         <span class="skill-tag">InDesign</span>
                         <span class="skill-tag">AI/ML Fundamentals</span>
                         <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Microsoft Office (Word, PowerPoint, Excel)</span>
-                        <span class="skill-tag">Basic Python for AI</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                        <span class="skill-tag">Python for AI</span>
                         <span class="skill-tag">Power BI</span>
                         <span class="skill-tag">Tableau</span>
                         <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Excel</span>
                     </div>
                 </div>
-                <!-- Soft Skills -->
                 <div class="skill-group">
-                    <p><i class="fas fa-hand-sparkles"></i> Soft Skills</p>
+                    <p>المهارات الشخصية</p>
                     <div>
-                        <span class="skill-tag">Creativity & Innovation</span>
-                        <span class="skill-tag">Leadership & Teamwork</span>
-                        <span class="skill-tag">Effective Communication</span>
-                        <span class="skill-tag">adaptability (purple belt)</span>
+                        <span class="skill-tag">إبداع وابتكار</span>
+                        <span class="skill-tag">قيادة</span>
+                        <span class="skill-tag">عمل جماعي</span>
+                        <span class="skill-tag">تواصل فعال</span>
                     </div>
                 </div>
-                <!-- Languages exactly from doc -->
                 <div style="margin-top: 2.2rem;">
                     <h3 style="font-size: 1.2rem; display: flex; gap: 0.5rem;"><i class="fas fa-globe"></i> Languages</h3>
                     <div class="lang-items">
@@ -452,125 +415,38 @@
                         <span>English · Very Good</span>
                     </div>
                 </div>
-                <hr>
-                <p style="color: #c5adff;"><i class="fas fa-pen-fancy"></i> Also: graphic design & AI workflows, prompt engineering, data viz.</p>
             </div>
         </div>
     </div>
 
-    <!-- EXTRA LENGTH: second row of certificates? we add a "further achievements" card for lengthening -->
-    <div class="extra-lengthen">
-        <div class="card">
-            <h3><i class="fas fa-medal" style="color:#cb9eff;"></i> micro‑credentials</h3>
-            <p style="margin-top: 0.5rem;">▪ DEPI: Data Analyst Specialist (full program). <br> ▪ IBM AI Fundamentals · capstone. <br> ▪ DECI levels 1 & 2 (AI, digital transformation). <br> ▪ Graphic design with AI integration (Adobe). <br> ▪ University AI/ML project team.</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-clock"></i> currently brewing</h3>
-            <p>▪ Advanced Python for data analysis <br> ▪ Building portfolio: 6+ placeholder projects <br> ▪ Tableau public profile <br> ▪ Prompt engineering for data storytelling</p>
-        </div>
-    </div>
-
-    <!-- PROJECTS section (placeholder but longer - 6 items) -->
-    <h2 style="margin-top: 1rem;"><i class="fas fa-code-branch"></i> GitHub · project sandbox <span style="font-size: 1rem;">(purple flavoured)</span></h2>
-    <!-- first row projects (3 cards) -->
+    <!-- projects -->
+    <h2 style="margin-top: 1rem;"><i class="fas fa-code-branch"></i> GitHub projects</h2>
     <div class="wide-grid">
         <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-chart-line"></i>
-                <h3>sales-whisperer</h3>
-            </div>
+            <div class="project-title"><i class="fas fa-chart-line"></i><h3>sales-whisperer</h3></div>
             <p>Power BI dashboard + SQL · predicts revenue spikes</p>
-            <div class="placeholder-note"><i class="fa-regular fa-star"></i> “caffeine vs sales correlation”</div>
+            <div class="placeholder-note">“caffeine vs sales correlation”</div>
             <div style="margin-top: 1rem;"><span class="skill-tag">Power BI</span><span class="skill-tag">SQL</span></div>
         </div>
         <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-robot"></i>
-                <h3>pandas-playdate</h3>
-            </div>
+            <div class="project-title"><i class="fas fa-robot"></i><h3>pandas-playdate</h3></div>
             <p>Python notebook: cleaning & fun EDA</p>
-            <div class="placeholder-note">✨ 99% pandas, 1% actual panda pics</div>
+            <div class="placeholder-note">99% pandas, 1% actual panda pics</div>
             <div style="margin-top: 1rem;"><span class="skill-tag">Python</span><span class="skill-tag">Jupyter</span></div>
         </div>
         <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-paint-brush"></i>
-                <h3>viz-canvas</h3>
-            </div>
+            <div class="project-title"><i class="fas fa-paint-brush"></i><h3>viz-canvas</h3></div>
             <p>Tableau + Illustrator storytelling</p>
-            <div class="placeholder-note">🎨 premium purple palette</div>
+            <div class="placeholder-note">premium purple palette</div>
             <div style="margin-top: 1rem;"><span class="skill-tag">Tableau</span><span class="skill-tag">Illustrator</span></div>
         </div>
     </div>
-    <!-- second row projects (another 3 cards) -->
-    <div class="wide-grid" style="margin-top: -1rem;">
-        <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-database"></i>
-                <h3>sql-sleuth</h3>
-            </div>
-            <p>20+ analytical queries · mock store data</p>
-            <div class="placeholder-note">🕵🏾 full moon purchase patterns</div>
-            <span class="skill-tag">SQL</span>
-        </div>
-        <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-message"></i>
-                <h3>prompt-magician</h3>
-            </div>
-            <p>prompt engineering samples for AI tools</p>
-            <div class="placeholder-note">✨ “explain data like a wizard”</div>
-            <span class="skill-tag">Prompt</span>
-        </div>
-        <div class="project-item">
-            <div class="project-title">
-                <i class="fas fa-table"></i>
-                <h3>excel-chronicles</h3>
-            </div>
-            <p>interactive dashboards, power query</p>
-            <div class="placeholder-note">📊 pivot tables that heal</div>
-            <span class="skill-tag">Excel</span>
-        </div>
-    </div>
 
-    <!-- extra projects row for length (3 more) because longer is better -->
-    <div class="wide-grid" style="margin-bottom: 2.5rem;">
-        <div class="project-item">
-            <div class="project-title"><i class="fas fa-eye"></i><h3>AI design fusion</h3></div>
-            <p>Adobe + AI generative workflows</p>
-            <div class="placeholder-note">🪄 Photoshop & illustrator + AI</div>
-            <span class="skill-tag">Adobe</span><span class="skill-tag">AI</span>
-        </div>
-        <div class="project-item">
-            <div class="project-title"><i class="fas fa-brain"></i><h3>ml-basics</h3></div>
-            <p>uni project: simple ML models</p>
-            <div class="placeholder-note">🤖 intro to regression</div>
-            <span class="skill-tag">Python</span><span class="skill-tag">ML</span>
-        </div>
-        <div class="project-item">
-            <div class="project-title"><i class="fas fa-chart-pie"></i><h3>powerbi‑hr</h3></div>
-            <p>HR analytics dashboard (placeholder)</p>
-            <div class="placeholder-note">⚡ attrition by coffee preference?</div>
-            <span class="skill-tag">Power BI</span>
-        </div>
-    </div>
-
-    <!-- even more length: a tiny "currently reading" card -->
-    <div class="card" style="margin: 1rem 0 2rem;">
-        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center;">
-            <i class="fas fa-book-open" style="font-size: 2rem; color: #c27eff;"></i>
-            <span>📖 diving into “Storytelling with Data” & advanced prompt engineering. Also learning to make purple the new black.</span>
-        </div>
-    </div>
-
-    <!-- footer with location & contact (purple consistent) -->
+    <!-- footer -->
     <div class="footer-quote">
-        <i class="fas fa-crown" style="margin-right: 8px; color: #dbb6ff;"></i> Youssef Mohamed Roshdy · Egypt 
-        <span style="margin-left: 1rem;"><i class="fas fa-smile"></i> data & design fusion</span>
+        <i class="fas fa-crown" style="margin-right: 8px;"></i> Youssef Mohamed Roshdy · Egypt
     </div>
-
-    <!-- tiny watermark: ATS friendly, mobile ready, dark purple premium -->
-    <p style="text-align: right; font-size: 0.7rem; color: #63508b; margin-top: 0.5rem;">purple dark mode · extended · mobile fit · photo ready</p>
+    <p style="text-align: right; font-size: 0.7rem; color: #63508b; margin-top: 0.5rem;">dark mode · mobile ready</p>
 </div>
 </body>
 </html>
