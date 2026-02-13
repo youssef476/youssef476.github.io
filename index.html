@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Roshdy · data analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Youssef Roshdy · data analyst (purple dark·mode)</title>
     <!-- Font & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,15 @@
         }
 
         body {
-            background: linear-gradient(145deg, #f9f5f0 0%, #f0eae3 100%);
+            background: #0b0710;  /* deep dark base */
             font-family: 'Inter', sans-serif;
-            color: #1b2b42;
+            color: #e1d9f2;
             line-height: 1.5;
-            padding: 2rem 1.5rem;
+            padding: 1.2rem 1rem;
             min-height: 100vh;
             display: flex;
             justify-content: center;
+            background-image: radial-gradient(circle at 15% 30%, #2a1b3c 0%, #0b0710 70%);
         }
 
         .wrapper {
@@ -32,16 +33,20 @@
             width: 100%;
         }
 
-        /* premium light mode – subtle shadows and warm undertones */
+        /* purple premium palette */
         h1, h2, h3 {
             font-weight: 600;
             letter-spacing: -0.02em;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             line-height: 1.1;
-            color: #1f2e4a;
+            background: linear-gradient(145deg, #e5d9ff, #cbadff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 8px rgba(170, 120, 255, 0.3);
         }
 
         h2 {
@@ -49,48 +54,50 @@
             margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
-            border-bottom: 2px solid rgba(0,70,100,0.15);
-            padding-bottom: 0.5rem;
+            gap: 0.7rem;
+            border-bottom: 2px solid rgba(180, 130, 255, 0.25);
+            padding-bottom: 0.6rem;
+            color: #cbb6ff;
         }
 
         h2 i {
-            color: #436b88;
-            font-size: 2rem;
+            color: #aa7eff;
+            filter: drop-shadow(0 0 6px #9147ff);
         }
 
         h3 {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #1f3b4f;
+            color: #d9c7ff;
             margin-bottom: 0.4rem;
         }
 
-        /* transparent card magic */
+        /* transparent glass cards with deep purple undertone */
         .card {
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
+            background: rgba(18, 12, 30, 0.55);
+            backdrop-filter: blur(14px) saturate(180%);
+            -webkit-backdrop-filter: blur(14px) saturate(180%);
+            border: 1px solid rgba(170, 120, 255, 0.25);
             border-radius: 32px;
-            box-shadow: 0 12px 28px -8px rgba(31, 47, 70, 0.12), 0 4px 12px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 20px 36px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(200, 160, 255, 0.1) inset;
             padding: 1.8rem 1.8rem;
-            transition: all 0.2s ease;
+            transition: all 0.25s ease;
         }
 
         .card:hover {
-            background: rgba(255, 255, 255, 0.6);
-            border-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 22px 36px -12px rgba(45, 62, 80, 0.18);
+            background: rgba(26, 18, 40, 0.7);
+            border-color: rgba(210, 150, 255, 0.5);
+            box-shadow: 0 28px 44px -12px #3a1d5e;
         }
 
-        /* header card */
+        /* profile header */
         .profile-row {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
         }
 
         .profile-left {
@@ -100,62 +107,58 @@
             flex-wrap: wrap;
         }
 
-        .avatar-icon {
-            background: rgba(200, 215, 225, 0.6);
-            backdrop-filter: blur(8px);
-            width: 95px;
-            height: 95px;
-            border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            font-size: 3.4rem;
-            color: #345e7c;
-            box-shadow: 0 14px 18px -10px rgba(67, 107, 136, 0.3);
+        /* actual photo styling - replace src with your image */
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 46% 54% 38% 62% / 58% 42% 58% 42%;
+            object-fit: cover;
+            border: 3px solid #ad7eff;
+            box-shadow: 0 14px 28px -8px #000000b3, 0 0 20px #7526ff40;
+            background: #2a1e3f; /* fallback color */
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
             gap: 1.8rem;
-            font-weight: 400;
-            color: #2a4057;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(6px);
-            padding: 0.9rem 2rem;
-            border-radius: 80px;
-            border: 1px solid rgba(255,255,255,0.7);
+            background: rgba(16, 8, 27, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 0.9rem 2.2rem;
+            border-radius: 60px;
+            border: 1px solid rgba(180, 130, 255, 0.45);
         }
 
         .contact-info a {
-            color: #1f3b4f;
+            color: #cfbfff;
             text-decoration: none;
             font-weight: 500;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             transition: color 0.2s;
+            font-size: 0.95rem;
         }
 
         .contact-info a:hover {
-            color: #007196;
+            color: #ffffff;
+            text-shadow: 0 0 6px #b77eff;
         }
 
         .fun-badge {
             display: inline-block;
-            background: rgba(255, 235, 210, 0.7);
+            background: rgba(52, 27, 77, 0.8);
             backdrop-filter: blur(4px);
-            padding: 0.5rem 1.3rem;
+            padding: 0.4rem 1.5rem;
             border-radius: 60px;
-            font-size: 1rem;
-            font-weight: 400;
-            border: 1px solid rgba(255,255,240,0.9);
-            color: #4a5f73;
+            font-size: 0.95rem;
+            border: 1px solid #ad60ff;
+            color: #e5ceff;
+            box-shadow: 0 2px 10px #411d75;
             margin-left: 0.8rem;
         }
 
-        /* grid areas */
+        /* main grid – longer layout */
         .main-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -167,163 +170,201 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
-        /* certificates – might be long, use list */
+        /* certificates list with sparkle */
         .cert-list {
             list-style: none;
             margin-top: 1rem;
         }
 
         .cert-list li {
-            margin-bottom: 1.2rem;
-            padding-left: 1.8rem;
+            margin-bottom: 1.4rem;
+            padding-left: 2rem;
             position: relative;
             font-weight: 400;
+            color: #d6c6ff;
         }
 
         .cert-list li:before {
-            content: "✨";
+            content: "🪄";
             position: absolute;
-            left: 0;
-            color: #aa7f5a;
-            font-size: 1.1rem;
+            left: -2px;
+            top: 0;
+            color: #c97fff;
+            font-size: 1.2rem;
+            filter: drop-shadow(0 0 4px #bf7aff);
         }
 
         .skill-tag {
             display: inline-block;
-            background: rgba(255,255,255,0.6);
+            background: rgba(45, 25, 70, 0.8);
             backdrop-filter: blur(3px);
-            border: 1px solid rgba(255,255,255,0.7);
-            padding: 0.3rem 1rem;
+            border: 1px solid rgba(200, 150, 255, 0.5);
+            padding: 0.4rem 1.1rem;
             border-radius: 40px;
             font-size: 0.9rem;
             margin: 0.2rem 0.25rem;
-            color: #1b3346;
+            color: #e7d5ff;
             font-weight: 500;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.6);
         }
 
         .skill-group {
-            margin: 1.4rem 0 0.8rem;
+            margin: 1.8rem 0 1.2rem;
         }
 
         .skill-group p {
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
             font-weight: 600;
-            color: #2c4a62;
+            color: #c7abff;
             text-transform: uppercase;
             font-size: 0.85rem;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.8px;
         }
 
-        .project-cards {
+        /* project cards longer */
+        .project-item {
+            background: rgba(18, 10, 32, 0.7);
+            backdrop-filter: blur(6px);
+            border-radius: 28px;
+            padding: 1.6rem 1.6rem;
+            border: 1px solid rgba(170, 120, 255, 0.35);
+            transition: 0.2s;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            gap: 1.2rem;
-        }
-
-        .project-item {
-            background: rgba(250, 250, 250, 0.3);
-            backdrop-filter: blur(4px);
-            border-radius: 26px;
-            padding: 1.4rem 1.6rem;
-            border: 1px solid rgba(255,255,255,0.6);
-            transition: 0.15s;
         }
 
         .project-item:hover {
-            background: rgba(255, 255, 255, 0.45);
+            background: rgba(32, 18, 55, 0.8);
+            border-color: #b266ff;
         }
 
         .project-title {
             display: flex;
             align-items: center;
             gap: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
         .project-title i {
-            font-size: 1.6rem;
-            color: #5f7d9c;
+            font-size: 1.9rem;
+            color: #b47aff;
+            filter: drop-shadow(0 0 6px #a259ff);
         }
 
         .placeholder-note {
             font-size: 0.9rem;
-            color: #446c84;
+            color: #bba3f0;
             margin-top: 0.5rem;
             font-style: italic;
+            border-left: 3px solid #a26eff;
+            padding-left: 0.7rem;
         }
 
         .footer-quote {
-            margin-top: 3rem;
+            margin: 3rem 0 1.5rem;
             text-align: center;
             font-size: 1rem;
-            color: #496277;
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(4px);
-            padding: 1rem 2rem;
+            background: rgba(20, 10, 40, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 2rem;
             border-radius: 80px;
-            border: 1px solid rgba(255, 255, 255, 0.4);
+            border: 1px solid #ab7eff;
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
+            color: #e6d0ff;
         }
 
         hr {
             border: none;
             height: 1px;
-            background: rgba(128, 149, 167, 0.2);
-            margin: 1.2rem 0;
+            background: linear-gradient(90deg, transparent, #ab7eff, transparent);
+            margin: 1.5rem 0;
         }
 
-        /* languages */
         .lang-items {
             display: flex;
             gap: 2rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
         }
         .lang-items span {
             font-weight: 500;
-            background: rgba(255, 255, 255, 0.3);
-            padding: 0.2rem 1.2rem;
+            background: #251b38;
+            padding: 0.3rem 1.6rem;
             border-radius: 40px;
-            border: 1px solid rgba(255,255,255,0.7);
+            border: 1px solid #ad60ff;
         }
 
-        /* tiny responsiveness */
+        /* mobile first small touches */
         @media (max-width: 900px) {
             .main-grid, .wide-grid {
                 grid-template-columns: 1fr;
             }
             .profile-row {
                 flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
+                align-items: stretch;
+            }
+            h1 {
+                font-size: 2.3rem;
+            }
+            .contact-info {
+                justify-content: center;
             }
         }
 
-        /* funny touches */
-        .glint {
-            background: rgba(255,245,220,0.8);
+        @media (max-width: 480px) {
+            .profile-photo {
+                width: 75px;
+                height: 75px;
+            }
+            .card {
+                padding: 1.5rem 1.2rem;
+            }
+            .fun-badge {
+                margin-left: 0;
+            }
         }
-        i.fa-regular, i.fas, i.far {
-            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.02));
+
+        /* extra purple touches */
+        .glow-text {
+            color: #e3c9ff;
+            text-shadow: 0 0 6px #9f5eff;
+        }
+
+        i.fa-solid, i.fa-regular {
+            filter: drop-shadow(0 0 5px #b05eff);
+        }
+        /* longer sections: extra block for lengthening */
+        .extra-lengthen {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        @media (max-width:700px){
+            .extra-lengthen{
+                grid-template-columns:1fr;
+            }
         }
     </style>
 </head>
 <body>
 <div class="wrapper">
-    <!-- header with personal + friendly flare -->
-    <div class="card profile-row" style="padding: 1.5rem 2rem;">
+    <!-- header with actual photo – replace src with your image file -->
+    <div class="card profile-row" style="padding: 1.2rem 2rem;">
         <div class="profile-left">
-            <div class="avatar-icon">
-                <i class="fas fa-chart-pie"></i>
-            </div>
+            <!-- YOUR PHOTO GOES HERE: replace the URL below with your photo path/url -->
+            <img src="https://placekitten.com/200/200" alt="Youssef Roshdy" class="profile-photo" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%223a2a5e%22%2F%3E%3Ctext%20x%3D%2218%22%20y%3D%2268%22%20font-size%3D%2250%22%20fill%3D%22%23b38eff%22%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E';">
             <div>
                 <h1>Youssef Mohamed Roshdy</h1>
-                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
-                    <span style="font-size: 1.4rem; font-weight: 400; background: rgba(255,255,240,0.5); padding: 0.2rem 1.2rem; border-radius: 40px;">Data Analyst</span>
-                    <span class="fun-badge"><i class="fas fa-smile-wink" style="margin-right: 6px;"></i>junior but make it insightful</span>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-top: 0.4rem;">
+                    <span style="font-size: 1.4rem; font-weight: 400; background: #281e3e; padding: 0.2rem 1.3rem; border-radius: 40px; border: 1px solid #b266ff;">Data Analyst</span>
+                    <span class="fun-badge"><i class="fas fa-moon"></i> purple mode · junior insight</span>
                 </div>
             </div>
         </div>
@@ -334,169 +375,202 @@
         </div>
     </div>
 
-    <!-- objective with a wink -->
-    <div class="card" style="margin: 1.5rem 0; padding: 1.5rem 2rem;">
-        <i class="fas fa-bullseye" style="color: #436b88; font-size: 1.8rem; float: right; opacity: 0.5;"></i>
-        <p style="font-size: 1.2rem; max-width: 80%; font-weight: 350;"><span style="font-weight: 600;">Objective:</span> Junior Data Analyst passionate about extracting insights (and the occasional coffee) to support data‑driven decisions. Excel, SQL, Python, Power BI — and a sprinkle of creative AI. Ready to grow and make data fun.</p>
+    <!-- objective with spark (same data) -->
+    <div class="card" style="margin: 1.8rem 0; padding: 1.6rem 2.2rem;">
+        <i class="fas fa-bullseye" style="color: #c38eff; font-size: 2rem; float: right; opacity: 0.6;"></i>
+        <p style="font-size: 1.25rem; max-width: 85%; font-weight: 350; color: #e2d3ff;"><span style="font-weight: 700; color: #e5c3ff;">Objective:</span> Junior Data Analyst passionate about data analysis and extracting insights to support data‑driven decision making. Skilled in Excel, SQL, Python, and Power BI, and eager to grow in a professional environment.</p>
     </div>
 
-    <!-- main two columns: Education + certs / skills & languages -->
+    <!-- main two columns: Education + certificates / skills + languages (from updated resume) -->
     <div class="main-grid">
-        <!-- left column: Education & certificates -->
+        <!-- left column: Education & certificates (long list) -->
         <div>
-            <!-- Education card transparent -->
+            <!-- Education card -->
             <div class="card" style="margin-bottom: 2rem;">
                 <h2><i class="fas fa-graduation-cap"></i> Education</h2>
                 <div style="display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;">
                     <h3 style="margin-bottom: 0;">Faculty of Computers and Information Science</h3>
-                    <span style="background: rgba(255,235,200,0.6); padding: 0.2rem 1rem; border-radius: 40px;">2025 – 2029</span>
+                    <span style="background: #2b1c44; padding: 0.2rem 1rem; border-radius: 40px; border:1px solid #ad6eff;">2025 – 2029</span>
                 </div>
-                <p style="font-size: 1.1rem; color: #3b5d76;">Mansoura University · expected grad 2029</p>
+                <p style="font-size: 1.15rem; color: #bba8f2;">Mansoura University</p>
                 <hr>
-                <p style="margin-top: 0.5rem;"><i class="fas fa-robot" style="margin-right: 10px; color: #5f7d9c;"></i>AI & machine learning projects through university teams – already breaking the ice with data.</p>
+                <p><i class="fas fa-microchip"></i> AI & machine learning projects through university teams – data analysis basics and ML exploration.</p>
             </div>
 
-            <!-- Certificates card (transparent) -->
+            <!-- Certificates card (DETAILED from doc) -->
             <div class="card">
-                <h2><i class="fas fa-certificate"></i> Certificates <span style="font-size: 0.9rem; font-weight: 400; margin-left: 10px;">(yes, he collects them)</span></h2>
+                <h2><i class="fas fa-certificate"></i> Certificates <span style="font-size: 1rem; font-weight: 400; margin-left: 10px;">(ministry & beyond)</span></h2>
                 <ul class="cert-list">
-                    <li><strong>Graphic Design (Adobe PS, AI, InDesign)</strong> + AI workflows – DECI, Ministry of Communications</li>
-                    <li><strong>Digital Egypt Cubs Initiative</strong> – Levels 1 & 2 (AI, innovation, digital transformation)</li>
-                    <li><strong>AI & Machine Learning course</strong> – university team projects, data analysis basics & ML</li>
-                    <li><strong>DEPI – Data Analyst Specialist</strong> (Python, SQL, Excel, Power BI, Tableau, prompt engineering)</li>
-                    <li><strong>IBM Artificial Intelligence Fundamentals</strong> + capstone project</li>
+                    <li><strong>Digital Egypt Pioneers Initiative - DEPI</strong> – Data Analyst Specialist Program: 1. data-driven decision-making fundamentals · 2. data cleaning, preparation, analysis (Python, SQL, Excel) · 3. visualization (Power BI, Tableau, Excel) · 4. Prompt Engineering for effective AI interaction.</li>
+                    <li><strong>IBM Artificial Intelligence Fundamentals</strong> + capstone project.</li>
+                    <li><strong>AI and machine learning course</strong> – university team projects (basics of data analysis & ML).</li>
+                    <li><strong>Digital Egypt Cubs Initiative - DECI</strong> – Levels 1 & 2 (AI, innovation, digital transformation).</li>
+                    <li><strong>Graphic Design course</strong> – Photoshop, Illustrator, InDesign, integrating AI tools into creative workflows.</li>
                 </ul>
-                <div style="margin-top: 1rem; font-size: 0.95rem; background: rgba(255,255,230,0.4); padding: 0.7rem; border-radius: 20px;">
-                    <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i> “Prompt Engineering for effective AI interaction” – yep, that’s on the list.
+                <div style="margin-top: 1.5rem; font-size: 0.95rem; background: #1d1235; padding: 0.8rem; border-radius: 24px; border: 1px solid #a566ff;">
+                    <i class="fas fa-robot" style="margin-right: 0.5rem;"></i> “Prompt Engineering fundamentals for effective AI interaction” – DEPI module proudly completed.
                 </div>
             </div>
         </div>
 
-        <!-- right column: Skills & languages -->
+        <!-- right column: Skills & Languages (as per new CV) -->
         <div>
             <div class="card">
-                <h2><i class="fas fa-cog" style="transform: rotate(15deg);"></i> Superpowers</h2>
-                <!-- technical skills -->
+                <h2><i class="fas fa-sliders-up"></i> arsenal</h2>
+                <!-- Technical Skills (detailed) -->
                 <div class="skill-group">
-                    <p><i class="fas fa-code"></i> Technical Skills</p>
+                    <p><i class="fas fa-brackets-curly"></i> Technical Skills</p>
                     <div>
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Python (Pandas, basics)</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">InDesign</span>
+                        <span class="skill-tag">AI/ML Fundamentals</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Microsoft Office (Word, PowerPoint, Excel)</span>
+                        <span class="skill-tag">Basic Python for AI</span>
                         <span class="skill-tag">Power BI</span>
                         <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Adobe Creative Suite</span>
-                        <span class="skill-tag">AI/ML fundamentals</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">MS Office</span>
-                        <span class="skill-tag">Prompt engineering</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
+                <!-- Soft Skills -->
                 <div class="skill-group">
-                    <p><i class="fas fa-feather-alt"></i> Soft skills (the human side)</p>
+                    <p><i class="fas fa-hand-sparkles"></i> Soft Skills</p>
                     <div>
                         <span class="skill-tag">Creativity & Innovation</span>
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Leadership & Teamwork</span>
                         <span class="skill-tag">Effective Communication</span>
-                        <span class="skill-tag">funny bone *beta*</span>
+                        <span class="skill-tag">adaptability (purple belt)</span>
                     </div>
                 </div>
-                <!-- languages -->
-                <div style="margin-top: 2rem;">
-                    <h3 style="font-size: 1.2rem; display: flex; gap: 0.5rem;"><i class="fas fa-language"></i> Languages</h3>
+                <!-- Languages exactly from doc -->
+                <div style="margin-top: 2.2rem;">
+                    <h3 style="font-size: 1.2rem; display: flex; gap: 0.5rem;"><i class="fas fa-globe"></i> Languages</h3>
                     <div class="lang-items">
-                        <span>Arabic (native)</span>
-                        <span>English (professional)</span>
+                        <span>Arabic · Native</span>
+                        <span>English · Very Good</span>
                     </div>
                 </div>
                 <hr>
-                <p style="font-size: 0.9rem; color: #2f556d;"><i class="fas fa-laptop"></i> Also familiar with: Illustrator, InDesign, basic AI workflows … and making dashboards pop.</p>
+                <p style="color: #c5adff;"><i class="fas fa-pen-fancy"></i> Also: graphic design & AI workflows, prompt engineering, data viz.</p>
             </div>
         </div>
     </div>
 
-    <!-- placeholder PROJECTS section – minimal & friendly with transparent cards -->
-    <h2 style="margin-top: 1rem;"><i class="fas fa-archive"></i>  GitHub projects & sandbox <span style="font-size: 1rem; font-weight: 400;">(placeholders with flair)</span></h2>
+    <!-- EXTRA LENGTH: second row of certificates? we add a "further achievements" card for lengthening -->
+    <div class="extra-lengthen">
+        <div class="card">
+            <h3><i class="fas fa-medal" style="color:#cb9eff;"></i> micro‑credentials</h3>
+            <p style="margin-top: 0.5rem;">▪ DEPI: Data Analyst Specialist (full program). <br> ▪ IBM AI Fundamentals · capstone. <br> ▪ DECI levels 1 & 2 (AI, digital transformation). <br> ▪ Graphic design with AI integration (Adobe). <br> ▪ University AI/ML project team.</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-clock"></i> currently brewing</h3>
+            <p>▪ Advanced Python for data analysis <br> ▪ Building portfolio: 6+ placeholder projects <br> ▪ Tableau public profile <br> ▪ Prompt engineering for data storytelling</p>
+        </div>
+    </div>
+
+    <!-- PROJECTS section (placeholder but longer - 6 items) -->
+    <h2 style="margin-top: 1rem;"><i class="fas fa-code-branch"></i> GitHub · project sandbox <span style="font-size: 1rem;">(purple flavoured)</span></h2>
+    <!-- first row projects (3 cards) -->
     <div class="wide-grid">
-        <!-- project 1 -->
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
                 <i class="fas fa-chart-line"></i>
                 <h3>sales-whisperer</h3>
             </div>
-            <p style="margin: 0.5rem 0 0.2rem;">Interactive sales dashboard · Power BI + SQL</p>
-            <div class="placeholder-note"><i class="fas fa-lightbulb"></i> “predicts when coffee boosts revenue” — placeholder</div>
-            <div style="margin-top: 1rem;">
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">SQL</span>
-            </div>
+            <p>Power BI dashboard + SQL · predicts revenue spikes</p>
+            <div class="placeholder-note"><i class="fa-regular fa-star"></i> “caffeine vs sales correlation”</div>
+            <div style="margin-top: 1rem;"><span class="skill-tag">Power BI</span><span class="skill-tag">SQL</span></div>
         </div>
-        <!-- project 2 -->
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
                 <i class="fas fa-robot"></i>
                 <h3>pandas-playdate</h3>
             </div>
-            <p>Python notebook: data cleaning & fun facts</p>
-            <div class="placeholder-note"><i class="fas fa-smile"></i> 99% pandas, 1% actual panda pictures</div>
-            <div style="margin-top: 1rem;">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Jupyter</span>
-            </div>
+            <p>Python notebook: cleaning & fun EDA</p>
+            <div class="placeholder-note">✨ 99% pandas, 1% actual panda pics</div>
+            <div style="margin-top: 1rem;"><span class="skill-tag">Python</span><span class="skill-tag">Jupyter</span></div>
         </div>
-        <!-- project 3 -->
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
                 <i class="fas fa-paint-brush"></i>
                 <h3>viz-canvas</h3>
             </div>
-            <p>Adobe + Tableau storytelling experiment</p>
-            <div class="placeholder-note"><i class="fas fa-palette"></i> premium colours, minimalistic vibes</div>
-            <div style="margin-top: 1rem;">
-                <span class="skill-tag">Tableau</span>
-                <span class="skill-tag">Illustrator</span>
-            </div>
+            <p>Tableau + Illustrator storytelling</p>
+            <div class="placeholder-note">🎨 premium purple palette</div>
+            <div style="margin-top: 1rem;"><span class="skill-tag">Tableau</span><span class="skill-tag">Illustrator</span></div>
         </div>
     </div>
-    <!-- second row of placeholder projects (more funny minimalism) -->
+    <!-- second row projects (another 3 cards) -->
     <div class="wide-grid" style="margin-top: -1rem;">
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
                 <i class="fas fa-database"></i>
                 <h3>sql-sleuth</h3>
             </div>
-            <p>20+ analysis queries on mock store data</p>
-            <div class="placeholder-note">⚡ includes “which product sells best during full moon?”</div>
+            <p>20+ analytical queries · mock store data</p>
+            <div class="placeholder-note">🕵🏾 full moon purchase patterns</div>
             <span class="skill-tag">SQL</span>
         </div>
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
-                <i class="fas fa-crow"></i>
+                <i class="fas fa-message"></i>
                 <h3>prompt-magician</h3>
             </div>
-            <p>AI prompt engineering samples & use cases</p>
-            <div class="placeholder-note">✨ “make data analysis sound like a pirate”</div>
+            <p>prompt engineering samples for AI tools</p>
+            <div class="placeholder-note">✨ “explain data like a wizard”</div>
             <span class="skill-tag">Prompt</span>
         </div>
-        <div class="card project-item">
+        <div class="project-item">
             <div class="project-title">
-                <i class="fas fa-th"></i>
+                <i class="fas fa-table"></i>
                 <h3>excel-chronicles</h3>
             </div>
-            <p>Interactive dashboards, power query, and ...</p>
-            <div class="placeholder-note">📊 pivot tables so nice you’ll cry</div>
+            <p>interactive dashboards, power query</p>
+            <div class="placeholder-note">📊 pivot tables that heal</div>
             <span class="skill-tag">Excel</span>
         </div>
     </div>
 
-    <!-- extra footer with a quote / contact joke -->
-    <div class="footer-quote">
-        <i class="fas fa-hand-peace" style="margin-right: 8px;"></i> “data analyst by day, canva designer by night” – Youssef 
-        <span style="margin-left: 1rem;"><i class="fas fa-map-pin"></i> Egypt</span>
+    <!-- extra projects row for length (3 more) because longer is better -->
+    <div class="wide-grid" style="margin-bottom: 2.5rem;">
+        <div class="project-item">
+            <div class="project-title"><i class="fas fa-eye"></i><h3>AI design fusion</h3></div>
+            <p>Adobe + AI generative workflows</p>
+            <div class="placeholder-note">🪄 Photoshop & illustrator + AI</div>
+            <span class="skill-tag">Adobe</span><span class="skill-tag">AI</span>
+        </div>
+        <div class="project-item">
+            <div class="project-title"><i class="fas fa-brain"></i><h3>ml-basics</h3></div>
+            <p>uni project: simple ML models</p>
+            <div class="placeholder-note">🤖 intro to regression</div>
+            <span class="skill-tag">Python</span><span class="skill-tag">ML</span>
+        </div>
+        <div class="project-item">
+            <div class="project-title"><i class="fas fa-chart-pie"></i><h3>powerbi‑hr</h3></div>
+            <p>HR analytics dashboard (placeholder)</p>
+            <div class="placeholder-note">⚡ attrition by coffee preference?</div>
+            <span class="skill-tag">Power BI</span>
+        </div>
     </div>
-    <!-- micro copy: all in one HTML, transparent cards, light mode, premium colours, friendly flare ✔ -->
+
+    <!-- even more length: a tiny "currently reading" card -->
+    <div class="card" style="margin: 1rem 0 2rem;">
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center;">
+            <i class="fas fa-book-open" style="font-size: 2rem; color: #c27eff;"></i>
+            <span>📖 diving into “Storytelling with Data” & advanced prompt engineering. Also learning to make purple the new black.</span>
+        </div>
+    </div>
+
+    <!-- footer with location & contact (purple consistent) -->
+    <div class="footer-quote">
+        <i class="fas fa-crown" style="margin-right: 8px; color: #dbb6ff;"></i> Youssef Mohamed Roshdy · Egypt 
+        <span style="margin-left: 1rem;"><i class="fas fa-smile"></i> data & design fusion</span>
+    </div>
+
+    <!-- tiny watermark: ATS friendly, mobile ready, dark purple premium -->
+    <p style="text-align: right; font-size: 0.7rem; color: #63508b; margin-top: 0.5rem;">purple dark mode · extended · mobile fit · photo ready</p>
 </div>
-<!-- yeah, that's minimal and a bit funny. and fully transparent cards. -->
 </body>
 </html>
